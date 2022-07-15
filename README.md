@@ -25,6 +25,7 @@ Consider this example graph - first of all a message from its neighbors is prepa
 This prepared message is then summarized by simple summation or max pooling operation. 
 Finally, next state of the node is computed from its previous state and the message from its neighbors.
 
+![Two Users][https://github.com/jackfrost1411/masquerade-detection-using-srgnn/images/Two Users.png]
 This is how two different users would look like to a GNN after training. X-axis are the learned feature representations of the commands on y axis. This features define user behaviour.
 Here, is the overall architecture we employed in our paper. We pass in the sequence of commands from a user’s shell history as graphs to a GNN and get the final command embeddings. We apply a attention mechanism to ensure that we rely on the entire session to predict the next command and not just the last executed command. At last, we have a softmax function to predict the probability scores for each command in dictionary being the next command.
 
