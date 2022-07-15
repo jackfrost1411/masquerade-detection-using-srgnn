@@ -1,4 +1,4 @@
-# masquerade-detection-using-srgnn
+# Masquerade Detection Using SR-GNN
 
 Graphs are cool and vital ways of representing information and relationships in the world around us.
 Nowadays graphs are everywhere - from Social media platforms to molecules in pharmaceutical settings. The famous Konigsberg problem can be solved using graphs.
