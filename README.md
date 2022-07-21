@@ -1,5 +1,6 @@
-# [Masquerade Detection Using SR-GNN](https://doi.org/10.1145/3491418.3535187)
+# [Artificial Intelligence to Classify and Detect Masquerading Users on HPC Systems from Shell Histories](https://doi.org/10.1145/3491418.3535187)
 
+## SR-GNN
 Graphs are cool and vital ways of representing information and relationships in the world around us.
 Nowadays graphs are everywhere - from Social media platforms to molecules in pharmaceutical settings. The famous Konigsberg problem can be solved using graphs.
 
