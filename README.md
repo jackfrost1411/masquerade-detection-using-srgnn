@@ -1,4 +1,4 @@
-# Masquerade Detection Using SR-GNN
+# [Masquerade Detection Using SR-GNN](https://doi.org/10.1145/3491418.3535187)
 
 Graphs are cool and vital ways of representing information and relationships in the world around us.
 Nowadays graphs are everywhere - from Social media platforms to molecules in pharmaceutical settings. The famous Konigsberg problem can be solved using graphs.
@@ -13,18 +13,10 @@ In graphical terms, for the shell histories, each command is a node, and edges e
 
 Now we want to learn a “neural network suitable representation” of the graph data also known as Representation learning.
 Graph neural networks are the way to do this.
-We have a set of initial node embeddings and we pass this information to the GNN and get a new set of embeddings for each node.
-Similar nodes (nodes with similar features or structural context will lead to similar node embeddings). This node embeddings cannot be interpreted as it’s a artificial compound of node and edge features within the graph.
-
-Graph neural networks have several message passing layers. But what happens in each layer?
-
-Consider this example graph - first of all a message from its neighbors is prepared depending on the type of edges. 
-This prepared message is then summarized by simple summation or max pooling operation. 
-Finally, next state of the node is computed from its previous state and the message from its neighbors.
 
 ![Two Users](https://github.com/jackfrost1411/masquerade-detection-using-srgnn/blob/main/images/Two%20users.png)
 This is how two different users would look like to a GNN after training. X-axis are the learned feature representations of the commands on y axis. This features define user behaviour.
-The overall architecture is visualized in the paper. We pass in the sequence of commands from a user’s shell history as graphs to a GNN and get the final command embeddings. We apply a attention mechanism to ensure that we rely on the entire session to predict the next command and not just the last executed command. At last, we have a softmax function to predict the probability scores for each command in dictionary being the next command.
+The overall architecture is visualized in the paper (https://doi.org/10.1145/3491418.3535187). We pass in the sequence of commands from a user’s shell history as graphs to a GNN and get the final command embeddings. We apply a attention mechanism to ensure that we rely on the entire session to predict the next command and not just the last executed command. At last, we have a softmax function to predict the probability scores for each command in dictionary being the next command.
 
 How do we run inference on the model trained on one user’s shell history? We pass in random command sequences of various test users in the batch of 200 to this model and ask the model to predict the next command in the hope that model will recognize the similar command patterns - if the sequence is of the same user the model is trained on then it will result in high accuracy and vice versa.
 
