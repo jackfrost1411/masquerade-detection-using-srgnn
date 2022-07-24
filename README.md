@@ -1,6 +1,6 @@
 # [Artificial Intelligence to Classify and Detect Masquerading Users on HPC Systems from Shell Histories](https://doi.org/10.1145/3491418.3535187)
 
-# [We won the best student short paper award!](https://www.linkedin.com/posts/dhruvilshah28_artificialintelligence-researchcomputing-activity-6956009976465149952-EgnQ?utm_source=linkedin_share&utm_medium=member_desktop_web)
+# [Best student short paper award!](https://www.linkedin.com/posts/dhruvilshah28_artificialintelligence-researchcomputing-activity-6956009976465149952-EgnQ?utm_source=linkedin_share&utm_medium=member_desktop_web)
 
 ## SR-GNN
 Graphs are cool and vital ways of representing information and relationships in the world around us.
